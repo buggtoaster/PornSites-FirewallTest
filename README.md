@@ -1,8 +1,8 @@
 # PornSites-FirewallTest
-List of known porn sites and python code to test local firewall rules against known porn websites.
+Python script to test local firewall rules against a list of porn websites.
 
 
-#How to use this script
+##How to use this script
 
 Download this repository:
 ```
@@ -12,6 +12,11 @@ Change directory to the downlaoded repository:
 ```
 cd PornSite-FirewallTest
 ```
+Download your list of porn websites:
+```
+wget https://raw.githubusercontent.com/chadmayfield/my-pihole-blocklists/master/lists/pi_blocklist_porn_all.list > porn.list
+```
+
 Execute the python script:
 ```
 python3 ./porn.py 
