@@ -7,7 +7,7 @@ with open("porn.list") as f:
         try:
             l = f"http://{l.rstrip()}"
             r = requests.get(l)
-            with open('porn.out', "w") as outfile:
+            with open('porn.out', "a") as outfile:
                 outfile.write(f'{l.rstrip()} | Accessible | Status Code: {r.status_code}\n')
         except Exception as e:
             if "NameResolutionError" in str(e):
